@@ -22,8 +22,8 @@ jobs:
       run: python update.py
 
     - name: Commit changes
- 	env:
-    	  TOKEN: ${{ secrets.TARGET_PAT }}
+      env:
+    	TOKEN: ${{ secrets.TARGET_PAT }}
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
